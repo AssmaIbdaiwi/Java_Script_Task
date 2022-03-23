@@ -1,0 +1,18 @@
+.font_family{
+    display: inline;
+}
+.font_size{
+    display: inline;
+}
+.font_style{
+    display: inline;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+.par{
+    border:solid 1px black;
+    width:450px;
+    height:200px;
+    padding-left: 10px;
+    margin-top: 10px;
+}

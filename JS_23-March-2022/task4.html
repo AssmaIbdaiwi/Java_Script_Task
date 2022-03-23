@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise #4</title>
+    <link rel="stylesheet" href="task4.css">
+    <script src="task4.js"></script>
+</head>
+
+<body>
+    <form>
+        <div class="font_family">
+            <select onchange="family()" id="familystyle">
+                <option value="Ariel">Ariel</option>
+                <option value="Courier_New">Courier New</option>
+                <option value="Lucida_Sans">Lucida Sans</option>
+            </select>
+        </div>
+        <div class="font_size">
+            <select onchange="fsize()" id="ffsize">
+                <option value="12">12px</option>
+                <option value="20">20px</option>
+                <option value="25">25px</option>
+            </select>
+        </div>
+        <label>Italic </label>
+            <input type="checkbox" name="italic1" id="italic1" onclick="Italic();">
+        <label>Bold </label>
+            <input type="checkbox" name="bold1" id="bold1" onclick="Bold();">
+        <label>Underline </label>
+        <input type="checkbox" name="underline" id="underline" onclick="Under();">
+    </form>
+    <div class="par">
+        <p id="par1"> The quick brown fox, jumps over thr lazy dog</p>
+
+    </div>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise #3</title>
+</head>
+<body>
+   <select onchange="flags()" id="flag" >
+       <option>Select</option>
+       <option  value="Jordan">Jordan</option>
+       <option value="Italy">Italy</option>
+       <option value="Qatar">Qatar</option>
+       <option value="Egypt">Egypt</option>
+       <option value="Norway">Norway</option>
+   </select>
+   <br/>
+   <img src="pic/noimg.jfif" width="200px" height="200px" id="pic">
+    <script>
+     function flags(){
+var result= document.getElementById('flag').value;
+ if (result == "Jordan"){
+document.getElementById('pic').src='pic/jordan.jfif';
+}
+ else if (result == "Italy"){
+       document.getElementById('pic').src='pic/italy.png';
+ }
+ else if (result == "Qatar"){
+ document.getElementById('pic').src='pic/qatar-flag.jpg';
+ }
+ else if (result == "Egypt"){
+document.getElementById('pic').src='pic/egypt.jfif';
+ }
+ else{
+document.getElementById('pic').src='pic/norway.jfif';
+ }
+ }
+    </script>
+</body>
+</html>
