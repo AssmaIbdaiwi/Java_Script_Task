@@ -12,16 +12,17 @@
     <form>
         <br />
         <label> Password (min 6 characters):</label>
-        <input type="password" placeholder="Password" id="pass" onchange="pass1()"value="">
+        <input type="password" placeholder="Password" id="pass" onchange="pass1()" value="">
         <p id="short" style="display: inline; color: red;"></p>
         <br /><br />
         <p id="short" style="display: inline;"></p>
-        
+
         <label>Repeat password :</label>
-        <input type="password" placeholder="Re-password" style="margin-left: 70px; "onchange ="repass()" value="" id="reepass">
-        
+        <input type="password" placeholder="Re-password" style="margin-left: 70px; " onchange="repass()" value=""
+            id="reepass">
+
         <p id="dontmatch" style="display: inline; color: red ;"></p>
-       <br/><br/>
+        <br /><br />
         <input type="submit" style="display:none" id="btn">
     </form>
     <script>
@@ -33,14 +34,14 @@
             }
         }
         function repass() {
-        let valuer = document.getElementById('reepass').value;
-        let valuep = document.getElementById('pass').value;
-            if (valuep == valuer){
-                document.getElementById('btn').style.display='block';
-               
+            let valuer = document.getElementById('reepass').value;
+            let valuep = document.getElementById('pass').value;
+            if (valuep == valuer) {
+                document.getElementById('btn').style.display = 'block';
+
             }
-            else{
-                document.getElementById('dontmatch').innerHTML= "The two passwords don't match";
+            else {
+                document.getElementById('dontmatch').innerHTML = "The two passwords don't match";
             }
         }
 

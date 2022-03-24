@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise #7</title>
+</head>
+<body>
+    <!-- Create a function called repeatWord
+that accept a string
+and return an object that represents how many times each word repeat
+** no matter it is upper case or lower case
+** Search on MDN about something can cut the string to words??
+
+Ex: repeatWord("My name is alex mercer class name B baba mama hello Hello HELLO")
+=> {
+  my:1,
+  name:2,
+  is:1,
+  alex:1,
+  mercer:1,
+  class:1,
+  b:1,
+  baba:1,
+  mama:1,
+  hello:3
+}
+
+*/ -->
+<script>
+function repeatWord(string){
+  var words = string.split(' ');
+  object = {};
+  for(i = 0 ; i < words.length; i++){
+      words[i] = words[i].toLowerCase();
+   if(!object.hasOwnProperty(words[i])){
+       object[`${words[i]}`] = 1;
+    
+  }else{
+   object[`${words[i]}`]++;
+  }
+
+  
+}
+
+return object;
+}
+
+console.log(repeatWord("My name is alex mercer class name B baba mama hello Hello HELLO"));
+</script>
+</body>
+</html>

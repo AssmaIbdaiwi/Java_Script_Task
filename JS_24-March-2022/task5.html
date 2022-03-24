@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise #5</title>
+</head>
+<body>
+    <!-- Using the varabile persons
+Create a function called longestName
+that accept an object
+and return the full name of the person have longest full name
+
+Ex: longestName(persons) => "Soso Al-Amora"
+*/ -->
+<script>
+     var persons = [
+  { name: { first: 'John', last: 'Hob' }, age: 35 },
+  { name: { first: 'Alex', last: 'Mercer' }, age: 25 },
+  { name: { first: 'Alice', last: 'Zaheer' }, age: 24 },
+  { name: { first: 'Zues', last: 'Odin' }, age: 55 },
+  { name: { first: 'Soso', last: 'Al-Amora' }, age: 67 }
+];
+function longestName (person){
+ maxlength=person[0].name.first.length + person[0].name.last.length;
+    string =person[0].name.first +''+person[0].name.last;
+    length=0;
+    var size= Object.keys(person).length;
+    for(i=1;i<size;i++){
+        length=person[i].name.first.length+person[i].name.last.length;
+        if (length>maxlength){
+            maxlength=length;
+            string =person[i].name.first +''+person[i].name.last;
+        }
+    }
+    return string;
+}
+console.log(longestName(persons))
+</script>
+
+
+</body>
+</html>

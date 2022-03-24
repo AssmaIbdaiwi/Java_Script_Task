@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercises #4</title>
+</head>
+<body>
+  <!-- /*  Using the varabile persons
+Create a function called olderPerson
+that accept an object
+and return the full name of the older person
+
+Ex: olderPerson(persons) => "Soso Al-Amora"
+*/ -->
+<script>
+    var persons = [
+  { name: { first: 'John', last: 'Hob' }, age: 35 },
+  { name: { first: 'Alex', last: 'Mercer' }, age: 25 },
+  { name: { first: 'Alice', last: 'Zaheer' }, age: 24 },
+  { name: { first: 'Zues', last: 'Odin' }, age: 55 },
+  { name: { first: 'Soso', last: 'Al-Amora' }, age: 67 }
+];
+function olderPerson (person){
+    let max=person[0].age;
+    string =person[0].name.first +''+person[1].name.last;
+    var size= Object.keys(person).length;
+for (i=1; i< size; i++){
+  if(max < person[i].age){
+      max=person[i].age
+    string =person[i].name.first +''+person[i].name.last;  
+  }
+}
+return string
+}
+console.log(olderPerson(persons))
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise #2</title>
+</head>
+<body>
+    <script>
+ 
+
+/*
+2
+Using the varabile persons
+Create a function called firstName
+that accept an object
+and return all the first name of the person insides
+
+Ex: firstName(persons) => ['John', 'Alex', 'Alice', 'Thor', 'Soso']
+      
+var persons = [
+  { name: { first: 'John', last: 'Hob' }, age: 35 },
+  { name: { first: 'Alex', last: 'Mercer' }, age: 25 },
+  { name: { first: 'Alice', last: 'Zaheer' }, age: 24 },
+  { name: { first: 'Zues', last: 'Odin' }, age: 55 },
+  { name: { first: 'Soso', last: 'Al-Amora' }, age: 67 }
+];
+*/
+
+var persons = [
+  { name: { first: 'John', last: 'Hob' }, age: 35 },
+  { name: { first: 'Alex', last: 'Mercer' }, age: 25 },
+  { name: { first: 'Alice', last: 'Zaheer' }, age: 24 },
+  { name: { first: 'Zues', last: 'Odin' }, age: 55 },
+  { name: { first: 'Soso', last: 'Al-Amora' }, age: 67 }
+];
+function firstName (person){
+for(i=0; i<=5; i++)
+console.log(person[i].name.first);
+}
+console.log(firstName(persons))
+
+    </script>
+</body>
+</html>
