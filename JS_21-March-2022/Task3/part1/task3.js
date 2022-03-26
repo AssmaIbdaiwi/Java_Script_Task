@@ -10,12 +10,17 @@ Ex: repeatStr("to",2); => "to to"
 Ex: repeatStr("to",4); => "to to to to"
 */
 function repeatStr(string,number) {
+  if(string !== " "){
     var rep='';
     var i=0
     while ( i < number) {
       rep += string  ;
       i++;
     }
-    return rep;
+    return rep;}
+    else{
+      rep = "The string is empty";
+      return rep;
+  }
 }
 console.log ( repeatStr("to ",4));

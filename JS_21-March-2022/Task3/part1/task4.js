@@ -8,11 +8,11 @@ Ex: sum2(3, 6); => 3 + 4 + 5 + 6 => 18
 */
 function sum2(x,y) {
     let sum = x;
-    let i = x - 1;
-    while (i > 0 && i< y) {
-      sum = sum + i;
+    let i = x+1;
+    while (i <= y) {
+      sum += i  ;
       i++;
     }
     return sum;
 }
-console.log ( sum2(4,5));
+console.log ( sum2(3,6));
