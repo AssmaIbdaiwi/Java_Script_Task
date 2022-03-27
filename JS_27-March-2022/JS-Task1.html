@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="png/image" href="https://www.stickpng.com/assets/images/5847eb76cef1014c0b5e484f.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript</title>
+</head>
+
+<body>
+  <script src="task1.js"></script>
+</body>
+<form>
+  <div style="margin: 30px;padding: 20px;" id="card">
+  <label for="name">Name</label><br/>
+  <input type="text" name="name" id="name"><br/><br/>
+  <label for="age">Age</label><br/>
+  <input type="number" name="age" id="age" min="0"><br/><br/>
+
+  <label for="gender">Male</label>
+  <input type="radio" name="gender" id="male" value="male">
+  <label for="gender">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br/><br/>
+
+
+  <label for="description">Brief Description</label><br/>
+  <textarea name="description" id="description" rows="7" cols="80"></textarea><br/><br/>
+
+  <label for="University">Your major and university</label><br/>
+  <input type="text" name="University" id="University"><br/> <br/>
+  <label for="date">Birth Date</label><br/>
+  <input type="date" name="date" id="date"><br/><br/>
+
+  <label for="html">HTML</label>
+  <input type="checkbox" name="html" id="html">
+  <label for="css">CSS</label>
+  <input type="checkbox" name="css" id="css">
+  <label for="js">Java Script</label>
+  <input type="checkbox" name="js" id="js" ><br/><br/>
+
+  <label for="img">Select your image:</label> <br>
+  <input type="file" id="img" accept="image/*"><br/><br/>
+  
+  <label for="sibling">Siblings Number </label>
+  <input type="number" name="sibling" id="sibling" min="0"><br/><br/>
+
+  <label for="Bdescription">Brief Description</label><br/>
+  <textarea name="Bdescription" id="Bdescription" rows="7" cols="80"></textarea><br/><br/>
+
+  <input type="button" value="Submit" onclick="clickme()">
+</form> 
+</div>
+<div>
+<div id="card1" style="width: 200px; height: 200px; padding: 30px; margin-left: 20px;display: inline-block;">
+ 
+  <p id="name1"></p>
+  <p id="age1"></p>
+  <p id="gender1"></p>
+  <p id="date1"></p>
+  
+</div>
+
+<div id="card2" style="width: 200px; height: 200px; padding: 30px;margin: bottom 50px; margin-left: 20px ;;display: inline-block; ">
+  <p id="desc"></p>
+</div>
+
+<div id="card3"style="width: 200px; height: 200px; padding: 30px;margin: bottom 50px; margin-left: 20px ;;display: inline-block; ">
+  <p id="university1"></p>
+  <p id="ht2"></p>
+  <p id="cs2"></p>
+  <p id="js2"></p>
+</div>
+
+<div id="card4"style="width: 200px; height: 200px; padding: 30px;margin: bottom 50px; margin-left: 20px ;;display: inline-block; ">
+<img id =img1 width="60" height="60">
+  <p id="sibling1"></p> 
+  <p id="Bdescription1"></p>
+</div>
+</div>
+</form>
+</html>
