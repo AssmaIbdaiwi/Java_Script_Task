@@ -1,0 +1,5 @@
+[
+    {"car_name":"BMW", "price":"15000", "color":"blue"},
+    {"car_name":"Toyota", "price":"7000", "color":"red"},
+    {"car_name":"Marcides", "price":"16000", "color":"black"}
+]
