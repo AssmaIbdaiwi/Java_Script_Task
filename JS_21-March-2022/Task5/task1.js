@@ -1,44 +1,4 @@
-/*
- * Exercise 1:
- *
- * Make an array of numbers that are doubles of the first array
- *
- * Test Case:
- *
- * console.log(doubleNumbers([2, 5, 100]));
- *
- * Result:
- * [4, 10, 200]
- */
-function doubleNumbers(double) {
-    for (let i = 0; i < double.length; i++) {
-      double[i] = double[i] * 2;
-    }
-    return double;
-  }
-  console.log(doubleNumbers([2, 5, 100]));
-  /*
-   * Exercise 2 :
-   *
-   * Take an array of numbers and make them strings
-   *
-   * Test Case:
-   *
-   * console.log(stringItUp([2, 5, 100]));
-   *
-   * Result:
-   * ["2", "5", "100"]
-   */
-  
-  function stringItUp(string) {
-    newArr = [];
-    for (i = 0; i < string.length; i++) {
-      newArr[i] = string[i].toString();
-    }
-  
-    return newArr;
-  }
-  console.log(stringItUp([2, 5, 100]));
+
   /*
    * Exercise 3:
    *

@@ -10,13 +10,15 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body style="background-color: rgb(228, 130, 182);">
     <div class="container">
 <select class="form-control" id="char" onchange="select(this.value)" >
 <option>Please select your name</option>
 </select>
+<div >
+<p id="char1" style="background-color: antiquewhite;margin-top: 30px;padding-left: 100px;" ></p>
+</div> 
 
-<p id="char1"></p>
 </div>  
 
     <script>
@@ -24,8 +26,6 @@
       async  function LoadData(){
           const responce= await fetch('https://www.breakingbadapi.com/api/characters');
           const data= await responce.json();
-      var counter=0;
-
           for (let index =0; index<data.length;index++) {
            document.getElementById('char').innerHTML+="<option> "+ data[index].name +" </option>";
 
@@ -35,12 +35,12 @@
          }
         }
         LoadData();
-        
+     
         async  function select(x){
           const responce= await fetch(`https://www.breakingbadapi.com/api/characters?name=${x}`);
           const data= await responce.json();
           for (let index =0; index<data.length;index++) {
-            document.getElementById('char1').innerHTML= data[index].nickname ;
+            document.getElementById('char1').innerHTML= 'My nickname is: '+data[index].nickname ;
           
           }
 

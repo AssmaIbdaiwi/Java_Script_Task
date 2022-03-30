@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="png/image" href="https://www.stickpng.com/assets/images/5847eb76cef1014c0b5e484f.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript</title>
+</head>
+
+<body>
+  <script >
+  function validateEmail (emailAdress)
+    {
+      let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (emailAdress.match(regexEmail)) {
+        return true; 
+      } else {
+        return false; 
+      }
+    }
+    
+    let emailAdress = "test@gmail.com";
+    console.log(validateEmail(emailAdress));
+/////////////////////////////////////////////////////////////////
+
+    function validateNumber (number)
+    {      
+      let regexNumber =/^\s*[-. (]*([07]{1})(?=.*[7-9]{1}) (@"^[0-9]{7}$")/;
+      if (number.match(regexNumber)) {
+        return true; 
+      } else {
+        return false; 
+      }
+    }
+    
+    let number = "0775685539";
+    console.log(validateNumber(number));
+    /////////////////////////////////////////////////////////////////
+
+    function validatePassword (password)
+    {
+      let regexPassword =/((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%_-]).{6,15})/;
+      if (password.match(regexPassword)) {
+        return true; 
+      } else {
+        return false; 
+      }
+    }
+    
+    let password = "Hello_93";
+    console.log(validatePassword(password));
+
+
+</script>
+
+</body>
+
+</html>

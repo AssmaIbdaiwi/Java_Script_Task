@@ -1,0 +1,25 @@
+.inputs{
+ 
+    margin-left:50px;
+margin-top: 50px;
+}
+label{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+body{
+   
+   background-color: rgb(27, 65, 190);
+}
+h1{
+    text-align: center;
+    color: white;
+}
+p{
+display:inline-block;
+margin-left: 10px;
+font-size: 30px;
+font-weight: bold;
+color: rgb(69, 182, 25);
+}
